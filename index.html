@@ -356,10 +356,10 @@
 <!-- 3D HEART OVERLAY -->
 <div id="heartOverlay">
     <div class="stars"></div>
-    <div class="title2" id="title">✦ I LAB U ✦</div>
+    <div class="title2" id="title">✦ I LAB YO ✦</div>
     <div class="hint" id="hint">DRAG TO ROTATE &nbsp;·&nbsp; CLICK TO REVEAL</div>
     <!-- Update the name below to match your person's name -->
-    <div class="name-display" id="nameDisplay">TAMIKA💙</div>
+    <div class="name-display" id="nameDisplay">Cessa💙</div>
     <canvas id="c"></canvas>
 </div>
 
@@ -421,7 +421,7 @@ for (let i = 0; i < 4; i++) {
 document.getElementById('startBtn').addEventListener('click', function () {
     const name = document.getElementById('nameInput').value.trim().toLowerCase();
     // Change "tamika" to whatever name you want to allow
-    if (name === 'tamika') {
+    if (name === 'Cessa') {
         document.getElementById('nameScreen').style.display = 'none';
         document.getElementById('content').style.display = 'block';
     } else {
@@ -465,10 +465,10 @@ noButton.addEventListener('click', function () {
         noButton.style.fontSize = '7px';
         titleEl.textContent = 'BALA KA DYAN 😒';
 
-    } else if (noClickCount >= 4 && noClickCount < 15) {
+    } else if (noClickCount >= 4 && noClickCount < 7) {
         // Make the No button run away — stays in the middle area of the screen
         noButton.classList.add('running');
-        titleEl.textContent = 'BALA KA DYAN 😒';
+        titleEl.textContent = 'LA LIAR KA 😒';
 
         const btnW = 120, btnH = 52;
         const cx = window.innerWidth / 2;
@@ -484,7 +484,7 @@ noButton.addEventListener('click', function () {
         noButton.style.left = x + 'px';
         noButton.style.top  = y + 'px';
 
-    } else if (noClickCount >= 15) {
+    } else if (noClickCount >= 7) {
         message.innerText = 'Oh No! You broke the button :c';
         noButton.disabled = true;
         noButton.style.opacity = '0.3';
